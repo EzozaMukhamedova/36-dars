@@ -1,0 +1,15 @@
+.container {
+  width: 1440px;
+  padding: 0 45px;
+  // min-width: 571px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+@include mobile() {
+  .container {
+    width: 375px;
+    padding: 0 16px;
+    // max-width: 571px;
+  }
+}

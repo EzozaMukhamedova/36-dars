@@ -1,0 +1,103 @@
+.hero {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+
+  &__center-title {
+    color: white;
+    font-size: 198px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.7;
+    margin-top: 80px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      color: #ffd700;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+
+    &::after {
+      content: url(../../assets/icons/blure-top.svg);
+      background-position: center;
+      position: absolute;
+      top: 80px;
+      left: 100px;
+      // opacity: 1;
+      // transition: opacity 0.3s ease;
+    }
+
+    &::before {
+      content: url(../../assets/icons/blure-top.svg);
+      background-position: center;
+      position: absolute;
+      top: 140px;
+      right: 100px;
+      // opacity: 1;
+      // transition: opacity 0.3s ease;
+    }
+  }
+
+  &__wrapper {
+    text-align: center;
+    padding-top: 40px;
+
+    span {
+      font-size: 25px;
+      text-transform: uppercase;
+      padding-top: 40px;
+      padding-bottom: 64px;
+      line-height: 24px;
+      letter-spacing: 7px;
+    }
+  }
+}
+
+@include mobile() {
+  .hero {
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+
+    &__center-title {
+      color: white;
+      font-size: 72px;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: 46px;
+      margin-top: 30px;
+      position: relative;
+      &::after {
+        content: url(../../assets/icons/blure-mob-top.svg);
+        background-position: center;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+      }
+      &::before {
+        content: url(../../assets/icons/blure-mob-top.svg);
+        background-position: center;
+        position: absolute;
+        top: 140px;
+        right: 100px;
+      }
+    }
+    &__wrapper {
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 83px;
+      margin-top: 55px;
+      span {
+        text-align: center;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding-bottom: 64px;
+        line-height: 14px;
+        letter-spacing: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+.header {
+  background: url("../../assets/images/sky-bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 960px;
+  position: relative;
+
+  &__img-layer {
+    background: url("../../assets/images/bg-green.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 56px;
+    right: 0;
+    z-index: 2;
+  }
+
+  &__img-layer__gradient {
+    background: url("../../assets/icons/gradient.svg");
+    width: 100%;
+    height: 351px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+  }
+
+  &__img-layer__two {
+    background: url("../../assets/images/sky-zet.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+  }
+
+  &__img-layer__two span {
+    color: white;
+    font-size: 150px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::after {
+      content: url(../../assets/icons/blure-bottom.svg);
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+    }
+
+    &::before {
+      content: url(../../assets/icons/blure-bottom.svg);
+      background-position: center;
+      position: absolute;
+      top: 20px;
+      right: 160px;
+      z-index: 99;
+    }
+  }
+
+  &__img-layer__three {
+    background: url("../../assets/images/bg-mountains.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    // position: relative;
+
+    &::after {
+      content: url(../../assets/icons/blure-center.svg);
+      background-position: center;
+      position: absolute;
+      top: -110px;
+      left: 700px;
+      z-index: 99;
+    }
+  }
+}
+.nav__mob {
+  display: none;
+}
+
+.nav {
+  &__btn {
+    background: url("../../assets/icons/btn.svg");
+    width: 156px;
+    height: 40px;
+    position: relative;
+
+    a {
+      bottom: 7px;
+      right: 25px;
+      position: absolute;
+      align-items: center;
+    }
+
+    a::after {
+      content: url("../../assets/icons/svg-after.svg");
+      position: absolute;
+      top: -25px;
+      left: 35px;
+    }
+
+    a::before {
+      content: url("../../assets/icons/svg-before.svg");
+      position: absolute;
+      bottom: -25px;
+      left: 35px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    padding-top: 20px;
+
+    &__sub {
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+    }
+  }
+
+  &__item {
+    display: flex;
+    text-decoration: none;
+    gap: 40px;
+    margin-left: 180px;
+    margin-right: 140px;
+    border: 1px solid red;
+  }
+}
+
+@include mobile() {
+  .nav__list {
+    display: none;
+  }
+  .header {
+    &__img-layer__two span {
+      color: white;
+      font-size: 72px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+
+      &::after {
+        content: url(../../assets/icons/blure-mob-top.svg);
+        background-position: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+    }
+  }
+  .header {
+    background: url("../../assets/images/sky-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 613px;
+    position: relative;
+
+    &__img-layer {
+      background: url("../../assets/images/bg-green.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      bottom: 56px;
+      right: 0;
+      z-index: 2;
+    }
+
+    &__img-layer__gradient {
+      background: url("../../assets/icons/gradient.svg");
+      width: 100%;
+      height: 240px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+    }
+
+    &__img-layer__two {
+      background: url("../../assets/images/sky-zet.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 4;
+    }
+
+    &__img-layer__three {
+      background: url("../../assets/images/bg-mountains.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 35%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+      // position: relative;
+
+      &::after {
+        content: url(../../assets/icons/blure-top.svg);
+        background-position: center;
+        position: absolute;
+        // width: 63px;
+        height: 33px;
+        top: 0;
+        left: 320px;
+        z-index: 99;
+      }
+    }
+  }
+
+  .nav {
+    &__wrapper {
+      display: none;
+      // display: flex;
+      padding-top: 20px;
+
+      &__sub {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+      }
+    }
+
+    &__item {
+      display: flex;
+      text-decoration: none;
+      gap: 40px;
+      margin-left: 180px;
+      margin-right: 140px;
+      border: 1px solid red;
+    }
+  }
+  .nav__mob {
+    display: block;
+    padding: 25px 0;
+
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__left-img img {
+      width: 75px;
+      height: 36px;
+    }
+    &__center-img img {
+      width: 75px;
+      height: 39px;
+    }
+    &__right-img img {
+      width: 59px;
+      height: 24px;
+      display: inline;
+    }
+  }
+}
