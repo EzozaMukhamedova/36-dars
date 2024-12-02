@@ -83,7 +83,7 @@
     bottom: 0;
     right: 0;
     z-index: 5;
-    // position: relative;
+
 
     &::after {
       content: url(../../assets/icons/blure-center.svg);
@@ -145,7 +145,6 @@
     gap: 40px;
     margin-left: 180px;
     margin-right: 140px;
-    border: 1px solid red;
   }
 }
 
@@ -230,13 +229,13 @@
       bottom: 0;
       right: 0;
       z-index: 5;
-      // position: relative;
+
 
       &::after {
         content: url(../../assets/icons/blure-top.svg);
         background-position: center;
         position: absolute;
-        // width: 63px;
+        width: 63px;
         height: 33px;
         top: 0;
         left: 320px;
@@ -264,7 +263,6 @@
       gap: 40px;
       margin-left: 180px;
       margin-right: 140px;
-      border: 1px solid red;
     }
   }
   .nav__mob {
