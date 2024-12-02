@@ -17,8 +17,8 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-      transform: scale(1.05); 
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+      transform: scale(1.05);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     }
   }
 
@@ -112,11 +112,11 @@
       margin-right: 40px;
       cursor: pointer;
       position: relative;
- 
 
       &::after {
         content: "";
-        background: url(../../assets/icons/hover-icon.svg) center/cover no-repeat;
+        background: url(../../assets/icons/hover-icon.svg) center/cover
+          no-repeat;
         width: 18px;
         height: 12px;
         position: absolute;
@@ -144,7 +144,6 @@
       font-weight: 400;
       position: relative;
       z-index: 5;
-  
 
       &::after {
         content: url(../../assets/icons/top-after.svg);
@@ -156,7 +155,6 @@
     }
   }
 }
-
 
 @include mobile() {
   .top {
@@ -189,7 +187,6 @@
       color: white;
       margin-bottom: 126px;
 
-
       &-group {
         display: flex;
         justify-content: center;
@@ -197,7 +194,6 @@
         align-items: center;
         text-align: center;
         justify-items: center;
-
       }
 
       &-bottom {
